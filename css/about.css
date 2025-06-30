@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.slider {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 1px;
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+}
+/*슬라이드 끝*/
+
+/*탭메뉴 시작*/
+.tabs {
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  margin-top: 100px;
+  position: relative;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+}
+.tab-buttons button {
+  flex: 1 1;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  font-size: 24px;
+  padding: 30px;
+}
+.tab-content span {
+  float: right;
+}
+
+.tab-buttons .active {
+  border-bottom: 3px solid #007bff;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.tab-contents {
+  position: relative;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.tab-content {
+  display: none;
+  padding: 50px 0 0 0;
+}
+
+.tab-content.active {
+  display: block;
+  line-height: 3;
+}
+
+.about_img img {
+  width: 590px;
+  height: 330px;
+  display: flex;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.about_text {
+  display: flex;
+  gap: 30px;
+  padding: 100px 0;
+  position: relative;
+}
+.about_text span {
+  position: absolute;
+  color: #fff;
+ width: 500px;
+ text-align: center;
+ font-weight: bold;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+}
+.about_text img:hover {  filter: brightness(30%) }
+
+.affill ul {
+  display: flex;
+  gap: 20px;
+  width: 380px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.affill li {
+  border-radius: 8px;
+  background: #f5f5f5;
+  text-align: center;
+  align-content: center;
+  width: 176px;
+  height: 100px;
+}
+.affill li:hover {filter: brightness(70%) }
